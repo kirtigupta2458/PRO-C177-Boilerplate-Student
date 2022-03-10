@@ -1,6 +1,4 @@
-/*
 
-MOVE THIS TO app.py
 
 
 let stories = [
@@ -25,7 +23,7 @@ let stories = [
         "story": `There once was a <span class="rep_input">_____</span> <span class="rep_input">_____</span> from <span class="rep_input">_____</span>. Nobody knew he was a <span class="rep_input">_____</span> because he had <span class="rep_input">_____</span> fur and ate <span class="rep_input">_____</span> <span class="rep_input">_____</span> each day. He liked to <span class="rep_input">_____</span> and sing <span class="rep_input">_____</span>. Whenever he was <span class="rep_input">_____</span>, he would start speaking <span class="rep_input">_____</span>. Then he would feel <span class="rep_input">_____</span>.`,
         "words": ["Smelly", "Cat", "California", "Cat", "Blue", "3", "Fishes", "Dance", "Songs", "Sad", "Childishly", "Happy"]
     }
-] */
+] 
 
 
 $(document).ready(function () {
@@ -82,20 +80,13 @@ $(function () {
             "story_id": $("#story_id").val(),
             "values": values
         }
-        $.ajax({
-            url: "/post-answers",
-            type: "post",
-            data: JSON.stringify(data),
-            dataType: "json",
-            contentType: 'application/json',
-            success: function (result) {
-                $("#result").html(result.result)
-                $("#result_container").removeClass("hidden")
-            },
-            error: function (result) {
-                alert(result.responseJSON.message)
-            }
-        })  
+       /*
+	
+	REPLACE THE COMMENT WITH jQuery ajax() CODE HERE!
+	
+		
+	
+	*/ 
 	  
 	  
     })
